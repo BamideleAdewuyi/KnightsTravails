@@ -4,6 +4,10 @@ class Traverse {
         this.finish = finish;
     };
 
+    possibleMoves(node) {
+
+    };
+
     calculate(node = this.start) {
         let current = node;
         let q = [node];
