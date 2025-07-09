@@ -3,6 +3,10 @@ class Traverse {
         this.start = start;
         this.finish = finish;
     }
+
+    calculate() {
+
+    };
 };
 
 export default Traverse;
