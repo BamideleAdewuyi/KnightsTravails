@@ -6,3 +6,7 @@ export function possibleMoves(start) {
     moves = moves.filter((move) => move[0] >= 0 && move[1] >=0)
     return moves;
 }
+
+export function checkMatch(arr1, arr2) {
+    return arr1[0] === arr2[0] && arr1[1] === arr2[1];
+}
