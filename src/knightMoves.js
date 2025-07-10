@@ -12,6 +12,10 @@ class Traverse {
         return arr;
     };
 
+    checkIncludes(pair, array) {
+
+    };
+
     possibleMoves(node) {
         let possibilities = [[node[0]-1, node[1]+2], [node[0]+1, node[1]+2],
                             [node[0]+2, node[1]+1], [node[0]+2, node[1]-1],
@@ -26,10 +30,13 @@ class Traverse {
     };
 
     calculate(node = this.start) {
-        let current = node;
         let q = [node];
-        let vis = [node];
-        console.log(this.possibleMoves(node))
+        let vis = [node, [1, 2]];
+        let neighbours = this.possibleMoves(node)
+        console.log(neighbours)
+        for (const neighbour of neighbours) {
+            console.log(vis.includes(neighbour))
+        }
     };
 };
 
