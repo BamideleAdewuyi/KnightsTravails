@@ -33,10 +33,16 @@ class Traverse {
     };
 
     calculate(node = this.start) {
+        let count = 0;
         let q = [node];
         let vis = [node];
         let neighbours = this.possibleMoves(node)
-        console.log(neighbours)
+        // for (const neighbour of neighbours) {
+        //     if (!this.checkIncludes(neighbour, vis)) {
+        //         vis.push(neighbour);
+        //         q.push(neighbour);
+        //     }
+        // };
         
     };
 };
