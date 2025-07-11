@@ -3,7 +3,7 @@ export function possibleMoves(start) {
                 [start[0]+2, start[1]+1], [start[0]+2, start[1]-1],
                 [start[0]+1, start[1]-2], [start[0]-1, start[1]-2],
                 [start[0]-2, start[1]-1], [start[0]-2, start[1]+1]];
-    moves = moves.filter((move) => move[0] >= 0 && move[1] >=0)
+    moves = moves.filter((move) => move[0] >= 0 && move[1] >=0 && move[0] < 8 && move[1] <8)
     return moves;
 }
 
